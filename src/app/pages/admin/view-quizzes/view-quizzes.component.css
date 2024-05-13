@@ -1,0 +1,5 @@
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-image: url("https://img.freepik.com/premium-vector/wooden-honey-dipper-schedule-list-vector-cartoon-character_193274-49651.jpg?w=740");
+    background-size: cover;
+  }

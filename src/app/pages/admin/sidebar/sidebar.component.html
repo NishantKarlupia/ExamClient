@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-action-list>
+        <div mat-subheader>Menu</div>
+        <button mat-list-item routerLink="/admin">
+            <div style="display: flex;">        
+                <mat-icon>home</mat-icon> <h3> Home</h3>
+            </div>
+        </button>
+        <button mat-list-item routerLink="/admin/profile">
+            <div style="display: flex;">        
+                <mat-icon>account_circle</mat-icon> <h3> Profile</h3>
+            </div>
+        </button>
+        <button mat-list-item routerLink="/admin/categories">
+            <div style="display: flex;">        
+                <mat-icon>list</mat-icon> <h3> Categories</h3>
+            </div>
+        </button>
+        <button mat-list-item routerLink="/admin/add-category">
+            <div style="display: flex;">        
+                <mat-icon>add_circle_outline</mat-icon> <h3> Add Category</h3>
+            </div>
+        </button>
+        <button mat-list-item routerLink="/admin/quizzes">
+            <div style="display: flex;">        
+                <mat-icon mat-list-icon>book</mat-icon> <h3> Quizzes</h3>
+            </div>
+        </button>
+        <button mat-list-item routerLink="/admin/add-quiz">
+            <div style="display: flex;">        
+                <mat-icon mat-list-icon>add</mat-icon> <h3> Add Quiz</h3>
+            </div>
+        </button>
+        <button mat-list-item routerLink="/admin/profile">
+            <div style="display: flex;">        
+                <mat-icon mat-list-icon>logout</mat-icon> <h3> Logout</h3>
+            </div>
+        </button>
+    </mat-action-list>
+</mat-card>

@@ -1,0 +1,69 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card *ngIf="quiz">
+          <mat-card-header>
+            <mat-card-title>Read the instructions of this page</mat-card-title>
+            <mat-card-subtitle>One step more to go</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <h1>{{ quiz.title }}</h1>
+            <p>{{ quiz.description }}</p>
+            <mat-divider></mat-divider>
+            <br />
+            <h1>Important Instructions</h1>
+            <ul>
+              <li>This quiz is only for practice purpose.</li>
+              <li>
+                Time of this quiz is
+                <b>{{ quiz.numberOfQuestions * 2 }} minutes</b>.
+              </li>
+              <li>Please submit the quiz within the time allocated.</li>
+              <li>You can attempt the quiz any number of times.</li>
+              <li>
+                There will be <b>{{ quiz.numberOfQuestions }} questions</b> in
+                this quiz.
+              </li>
+              <li>
+                Each question carries
+                <b>{{ quiz.maxMarks / quiz.numberOfQuestions }} marks</b>.
+              </li>
+              <li>There is no negative marking.</li>
+            </ul>
+            <mat-divider></mat-divider>
+            <br />
+            <h1>Attempting Quiz</h1>
+            <ul>
+              <li>Click <b>Start Quiz</b> button to start the quiz.</li>
+              <li>
+                The time will start the moment you click the Start Test Button.
+              </li>
+              <li>
+                You can't resume the quiz, if interrupted due to any reason.
+              </li>
+              <li>Scroll down to move to next question.</li>
+              <li>Click on <b>Submit Quiz</b> on completion of the quiz.</li>
+              <li>
+                Report of the test is automatically generated in the form of PDF
+                copy.
+              </li>
+            </ul>
+          </mat-card-content>
+
+          <mat-card-actions>
+            <button
+            (click)="startQuiz()"
+              color="primary"
+              mat-raised-button
+              style="margin: auto"
+            >
+              Start Quiz
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
